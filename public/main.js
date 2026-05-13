@@ -207,6 +207,12 @@
     const langButtons = document.querySelectorAll(".header__lang");
     const body = document.body;
     const STORAGE_KEY = "siteLang";
+    const DEFAULT_LANG = "sa";
+    const supportedLangs = new Set(Array.from(langButtons).map((btn) => btn.getAttribute("data-lang")).filter(Boolean));
+    const rtlLangs = /* @__PURE__ */ new Set(["sa"]);
+    function normalizeLang(lang) {
+      return supportedLangs.has(lang) ? lang : DEFAULT_LANG;
+    }
     let translations = {};
     async function tryFetch(url) {
       try {
@@ -245,18 +251,19 @@
     }
     function saveLang(lang) {
       try {
-        localStorage.setItem(STORAGE_KEY, lang);
+        localStorage.setItem(STORAGE_KEY, normalizeLang(lang));
       } catch (e) {
       }
     }
     function getSavedLang() {
       try {
-        return localStorage.getItem(STORAGE_KEY);
+        return normalizeLang(localStorage.getItem(STORAGE_KEY));
       } catch (e) {
         return null;
       }
     }
     function applyLang(lang) {
+      lang = normalizeLang(lang);
       if (!lang)
         return;
       body.setAttribute("data-lang", lang);
@@ -290,7 +297,6 @@
           el.setAttribute("content", text);
       });
       try {
-        const rtlLangs = /* @__PURE__ */ new Set(["sa", "pakistan"]);
         const dir = rtlLangs.has(lang) ? "rtl" : "ltr";
         document.documentElement.setAttribute("dir", dir);
         body.setAttribute("dir", dir);
@@ -309,7 +315,7 @@
     (async function initLang() {
       await loadTranslations();
       const saved = getSavedLang();
-      const initial = saved || langButtons[0] && langButtons[0].getAttribute("data-lang") || "en";
+      const initial = saved || langButtons[0] && langButtons[0].getAttribute("data-lang") || DEFAULT_LANG;
       applyLang(initial);
       document.dispatchEvent(new CustomEvent("langChanged", { detail: { lang: initial } }));
     })();

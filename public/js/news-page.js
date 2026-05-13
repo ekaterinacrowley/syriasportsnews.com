@@ -4,16 +4,22 @@
 // topics будет загружаться из `src/i18n/translations.json` на основе текущего языка
 let topics = [];
 let currentActiveLang = null;
+const NEWS_PAGE_DEFAULT_LANG = 'sa';
+const NEWS_PAGE_SUPPORTED_LANGS = new Set(['sa', 'tr', 'en', 'fr']);
+
+function normalizeNewsPageLang(lang) {
+  return NEWS_PAGE_SUPPORTED_LANGS.has(lang) ? lang : NEWS_PAGE_DEFAULT_LANG;
+}
 
 function getCurrentLang() {
-  const lang = document.body.getAttribute('data-lang') || localStorage.getItem('siteLang') || 'en';
+  const lang = normalizeNewsPageLang(document.body.getAttribute('data-lang') || localStorage.getItem('siteLang') || NEWS_PAGE_DEFAULT_LANG);
   console.log('getCurrentLang returned:', lang);
   return lang;
 }
 
 async function loadTopicsFromTranslations() {
   const STORAGE_KEY = 'siteLang';
-  const lang = document.body.getAttribute('data-lang') || localStorage.getItem(STORAGE_KEY) || 'en';
+  const lang = normalizeNewsPageLang(document.body.getAttribute('data-lang') || localStorage.getItem(STORAGE_KEY) || NEWS_PAGE_DEFAULT_LANG);
 
   // Попробуем несколько путей (корень, относительный)
   const candidates = [
@@ -310,6 +316,14 @@ function shuffleArray(array) {
   return shuffled;
 }
 
+function isAllTopic(topic) {
+  if (!topic) return true;
+  const normalized = String(topic).trim().toLowerCase();
+  const knownAllAliases = new Set(['all', 'tumu', 'tümü', 'tous', 'الكل']);
+  const firstTopic = topics && topics[0] ? String(topics[0]).trim().toLowerCase() : '';
+  return knownAllAliases.has(normalized) || (firstTopic && normalized === firstTopic);
+}
+
 function renderArticles(articles) {
   console.log('renderArticles called with', articles?.length || 0, 'articles');
   const customCount = articles?.filter(a => a.isCustom).length || 0;
@@ -446,7 +460,7 @@ async function loadAllNews() {
 
 async function loadNews(q = 'All') {
   if (!newsContainer) return;
-  if (q === 'All') {
+  if (isAllTopic(q)) {
     await loadAllNews();
     return;
   }
@@ -489,7 +503,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (firstBtn) {
     firstBtn.click();
   } else {
-    loadNews('All');
+    loadNews(topics[0] || 'All');
   }
 });
 
@@ -518,5 +532,5 @@ document.addEventListener('langChanged', async (e) => {
   createTopicButtons();
   const firstBtn = topicsContainer && topicsContainer.querySelector('button');
   if (firstBtn) firstBtn.click();
-  else loadNews('All');
+  else loadNews(topics[0] || 'All');
 });

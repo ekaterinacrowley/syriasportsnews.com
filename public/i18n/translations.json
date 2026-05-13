@@ -1,6 +1,6 @@
 {
   "en": {
-    "header.logo": "Omansportsnews",
+    "header.logo": "Lebanonsportsnews",
     "search.placeholder": "Type to search...",
     "header.app.reward": "Get your reward in the app",
     "header.app.button": "Get Bonus",
@@ -25,7 +25,7 @@
     "league.laliga": "La Liga",
     "see.more": "See more",
 
-    "main.title": "Omansportsnews",
+    "main.title": "Lebanonsportsnews",
     "main.watch": "Watch",
 
     "news.heading": "Breaking Sports Headlines",
@@ -104,17 +104,17 @@
     "redirect.bannerText": "Fast, simple, and secure",
     "redirect.progress": "Redirecting in <span id=\"redirect-countdown\">3</span> seconds…",
 
-    "footer.copyright": "© 2025 omansportsnews.com — Your hub for sports & trends. All rights reserved.",
+    "footer.copyright": "© 2025 lebanonsportsnews.com — Your hub for sports & trends. All rights reserved.",
 
     "bottom.menu": "Menu",
 
     "header.notifications.count": "3",
 
-    "site.title": "Omansportsnews",
+    "site.title": "Lebanonsportsnews",
     "site.keywords": "sports news, football news, live matches, match center, sports highlights, Oman sports, cricket news, basketball news, volleyball news, tennis news, esports news, MMA news"
   },
   "sa": {
-    "header.logo": "Omansportsnews",
+    "header.logo": "Lebanonsportsnews",
     "search.placeholder": "اكتب للبحث...",
     "header.app.reward": "احصل على مكافأتك في التطبيق",
     "header.app.button": "احصل على المكافأة",
@@ -139,7 +139,7 @@
     "league.laliga": "لا ليغا",
     "see.more": "عرض المزيد",
 
-    "main.title": "Omansportsnews",
+    "main.title": "Lebanonsportsnews",
     "main.watch": "مشاهدة",
 
     "news.heading": "أهم عناوين الرياضة",
@@ -218,17 +218,245 @@
     "redirect.bannerText": "سريع وبسيط وآمن",
     "redirect.progress": "سيتم تحويلك خلال <span id=\"redirect-countdown\">3</span> ثوانٍ…",
 
-    "footer.copyright": "2025 © omansportsnews.com — مركزك للأخبار الرياضية والصيحات. جميع الحقوق محفوظة.",
+    "footer.copyright": "2025 © lebanonsportsnews.com — مركزك للأخبار الرياضية والصيحات. جميع الحقوق محفوظة.",
 
     "bottom.menu": "القائمة",
 
     "header.notifications.count": "3",
 
-    "site.title": "Omansportsnews",
+    "site.title": "Lebanonsportsnews",
     "site.keywords": "أخبار الرياضة, أخبار كرة القدم, مباريات مباشرة, مركز المباريات, أبرز الأحداث الرياضية, رياضة عمان, أخبار الكريكيت, أخبار كرة السلة, أخبار الكرة الطائرة, أخبار التنس, أخبار الرياضات الإلكترونية, أخبار الفنون القتالية"
   },
+  "tr": {
+    "header.logo": "Lebanonsportsnews",
+    "search.placeholder": "Aramak için yazın...",
+    "header.app.reward": "Ödülünü uygulamada al",
+    "header.app.button": "Bonusu Al",
+
+    "sidebar.dashboard": "Panel",
+    "sidebar.liveFootball": "Canlı Futbol",
+    "sidebar.matchCenter": "Maç Merkezi",
+    "sidebar.topPicks": "Bugünün Öne Çıkanları",
+    "sidebar.standings": "Puan Durumu",
+    "sidebar.highlights": "Öne Çıkanlar",
+    "sidebar.news": "Haberler",
+    "sidebar.getFullExperience": "Tam Deneyimi Al",
+    "sidebar.getTheApp": "İzle. Oyna. Kazan.",
+    "sidebar.downloadOurApp": "Uygulamayı şimdi indir",
+
+    "tabs.football": "Futbol",
+    "tabs.cricket": "Kriket",
+    "tabs.basketball": "Basketbol",
+
+    "league.champions": "Şampiyonlar Ligi",
+    "league.premier": "Premier Lig",
+    "league.laliga": "La Liga",
+    "see.more": "Daha fazlası",
+
+    "main.title": "Lebanonsportsnews",
+    "main.watch": "İzle",
+
+    "news.heading": "Son Spor Manşetleri",
+    "news.viewMore": "Daha Fazla Gör",
+    "news.topics": ["Tümü", "Futbol", "Kriket", "eSpor", "Basketbol", "Voleybol", "Tenis", "MMA", "Öne Çıkanlar", "Trendler"],
+
+    "slider.days": "Gün",
+    "slider.hours": "Saat",
+    "slider.minutes": "Dakika",
+    "slider.seconds": "Saniye",
+    "slider.watchPlay": "İzle ve Oyna",
+    "slider.remind": "Hatırlat",
+    "slider.match1.title": "England vs Germany",
+    "slider.match1.date": "21 January 2025",
+    "slider.match1.team1": "England",
+    "slider.match1.team2": "Germany",
+    "slider.match2.title": "Pakistan A vs Oman",
+    "slider.match2.date": "21 January 2025",
+    "slider.match2.team1": "Pakistan A",
+    "slider.match2.team2": "Oman",
+    "slider.match3.title": "India A vs UAE",
+    "slider.match3.date": "21 January 2025",
+    "slider.match3.team1": "India A",
+    "slider.match3.team2": "UAE",
+    "slider.match4.title": "BAN A vs HK",
+    "slider.match4.date": "21 January 2025",
+    "slider.match4.team1": "BAN A",
+    "slider.match4.team2": "HK",
+
+    "sports.football": "Futbol",
+    "sports.cricket": "Kriket",
+    "sports.basketball": "Basketbol",
+    "sports.esports": "eSpor",
+    "sports.volleyball": "Voleybol",
+    "sports.others": "Diğerleri",
+    "date.yesterday": "Dün",
+    "date.today": "Bugün",
+    "date.tomorrow": "Yarın",
+    "date.dayBeforeYesterday": "Önceki gün",
+
+    "tab.champions": "Şampiyonlar Ligi",
+    "tab.europa": "Avrupa Ligi",
+
+    "telegram.title": "Bağlı Kalın — Telegram Kanalımıza Katılın",
+    "telegram.btn": "Telegram'a Katıl",
+
+    "appbanner.title.line1": "Daha Fazla Lig",
+    "appbanner.title.line2": "ve Canlı Maçlar",
+    "appbanner.text": "Canlı skorlar, maç istatistikleri ve gerçek zamanlı içgörüler için mobil uygulamamız yanınızda.",
+    "appbanner.continue": "Uygulamada Devam Et",
+
+    "apppopup.title": "Bonusunu Uygulamada Al",
+    "apppopup.text": "Maçları izle, favori takımlarını takip et ve özel ödüllerin kilidini aç — hepsi tek bir uygulamada.",
+    "apppopup.send": "Gönder",
+    "apppopup.downloadNow": "Şimdi İndir",
+    "apppopup.download.title": "Uygulamayı indir ve hoş geldin bonusunu hemen al",
+    "apppopup.download.android.text": "Google Play, Huawei AppGallery ve APK indirme seçenekleriyle mevcut",
+    "apppopup.download.ios.text": "App Store'da mevcut",
+    "apppopup.link.google": "Google Play",
+    "apppopup.link.appgallery": "AppGallery",
+    "apppopup.link.apk": "APK İndir",
+    "apppopup.link.appstore": "App Store",
+
+    "teams.heading": "Takımını takip et ve bir daha hiçbir maçı kaçırma",
+    "teams.topic.football": "Futbol",
+    "teams.topic.cricket": "Kriket",
+    "teams.topic.esports": "eSpor",
+    "teams.topic.basketball": "Basketbol",
+    "teams.topic.volleyball": "Voleybol",
+    "teams.topic.tennis": "Tenis",
+    "teams.topic.mma": "MMA",
+
+    "redirect.title": "Web sitesinde tam deneyim",
+    "redirect.subtitle": "Tüm özelliklerle orada devam et",
+    "redirect.bannerTitle": "Piyasadaki en iyilerden biri",
+    "redirect.bannerText": "Hızlı, sade ve güvenli",
+    "redirect.progress": "<span id=\"redirect-countdown\">3</span> saniye içinde yönlendiriliyorsunuz…",
+
+    "footer.copyright": "© 2025 lebanonsportsnews.com — Spor ve trendler için merkeziniz. Tüm hakları saklıdır.",
+
+    "bottom.menu": "Menü",
+
+    "header.notifications.count": "3",
+
+    "site.title": "Lebanonsportsnews",
+    "site.keywords": "spor haberleri, futbol haberleri, canlı maçlar, maç merkezi, spor özetleri, Umman sporları, kriket haberleri, basketbol haberleri, voleybol haberleri, tenis haberleri, espor haberleri, MMA haberleri"
+  },
+  "fr": {
+    "header.logo": "Lebanonsportsnews",
+    "search.placeholder": "Tapez pour rechercher...",
+    "header.app.reward": "Recevez votre récompense dans l'application",
+    "header.app.button": "Obtenir le bonus",
+
+    "sidebar.dashboard": "Tableau de bord",
+    "sidebar.liveFootball": "Football en direct",
+    "sidebar.matchCenter": "Centre des matchs",
+    "sidebar.topPicks": "Meilleurs choix du jour",
+    "sidebar.standings": "Classement",
+    "sidebar.highlights": "Temps forts",
+    "sidebar.news": "Actualités",
+    "sidebar.getFullExperience": "Profitez de l'expérience complète",
+    "sidebar.getTheApp": "Regardez. Pariez. Gagnez.",
+    "sidebar.downloadOurApp": "Téléchargez l'application maintenant",
+
+    "tabs.football": "Football",
+    "tabs.cricket": "Cricket",
+    "tabs.basketball": "Basket-ball",
+
+    "league.champions": "Ligue des champions",
+    "league.premier": "Premier League",
+    "league.laliga": "La Liga",
+    "see.more": "Voir plus",
+
+    "main.title": "Lebanonsportsnews",
+    "main.watch": "Regarder",
+
+    "news.heading": "Les grands titres du sport",
+    "news.viewMore": "Voir plus",
+    "news.topics": ["Tous", "Football", "Cricket", "eSport", "Basket-ball", "Volley-ball", "Tennis", "MMA", "Temps forts", "Tendances"],
+
+    "slider.days": "Jours",
+    "slider.hours": "Heures",
+    "slider.minutes": "Minutes",
+    "slider.seconds": "Secondes",
+    "slider.watchPlay": "Regarder et jouer",
+    "slider.remind": "Me le rappeler",
+    "slider.match1.title": "England vs Germany",
+    "slider.match1.date": "21 January 2025",
+    "slider.match1.team1": "England",
+    "slider.match1.team2": "Germany",
+    "slider.match2.title": "Pakistan A vs Oman",
+    "slider.match2.date": "21 January 2025",
+    "slider.match2.team1": "Pakistan A",
+    "slider.match2.team2": "Oman",
+    "slider.match3.title": "India A vs UAE",
+    "slider.match3.date": "21 January 2025",
+    "slider.match3.team1": "India A",
+    "slider.match3.team2": "UAE",
+    "slider.match4.title": "BAN A vs HK",
+    "slider.match4.date": "21 January 2025",
+    "slider.match4.team1": "BAN A",
+    "slider.match4.team2": "HK",
+
+    "sports.football": "Football",
+    "sports.cricket": "Cricket",
+    "sports.basketball": "Basket-ball",
+    "sports.esports": "eSport",
+    "sports.volleyball": "Volley-ball",
+    "sports.others": "Autres",
+    "date.yesterday": "Hier",
+    "date.today": "Aujourd'hui",
+    "date.tomorrow": "Demain",
+    "date.dayBeforeYesterday": "Avant-hier",
+
+    "tab.champions": "Ligue des champions",
+    "tab.europa": "Ligue Europa",
+
+    "telegram.title": "Restez connectés — rejoignez notre Telegram",
+    "telegram.btn": "Rejoindre Telegram",
+
+    "appbanner.title.line1": "Plus de ligues",
+    "appbanner.title.line2": "et de matchs en direct",
+    "appbanner.text": "Suivez les scores en direct, les statistiques et les analyses en temps réel dans notre application mobile.",
+    "appbanner.continue": "Continuer dans l'application",
+
+    "apppopup.title": "Obtenez votre bonus dans l'application",
+    "apppopup.text": "Regardez les matchs, suivez vos équipes préférées et débloquez des récompenses exclusives — tout dans une seule application.",
+    "apppopup.send": "Envoyer",
+    "apppopup.downloadNow": "Télécharger maintenant",
+    "apppopup.download.title": "Téléchargez l'application et recevez instantanément votre bonus de bienvenue",
+    "apppopup.download.android.text": "Disponible sur Google Play, Huawei AppGallery et en téléchargement APK",
+    "apppopup.download.ios.text": "Disponible sur l'App Store",
+    "apppopup.link.google": "Google Play",
+    "apppopup.link.appgallery": "AppGallery",
+    "apppopup.link.apk": "Télécharger l'APK",
+    "apppopup.link.appstore": "App Store",
+
+    "teams.heading": "Suivez votre équipe et ne manquez plus jamais un match",
+    "teams.topic.football": "Football",
+    "teams.topic.cricket": "Cricket",
+    "teams.topic.esports": "eSport",
+    "teams.topic.basketball": "Basket-ball",
+    "teams.topic.volleyball": "Volley-ball",
+    "teams.topic.tennis": "Tennis",
+    "teams.topic.mma": "MMA",
+
+    "redirect.title": "Toute l'expérience sur le site web",
+    "redirect.subtitle": "Continuez là-bas avec toutes les fonctionnalités",
+    "redirect.bannerTitle": "L'un des meilleurs du marché",
+    "redirect.bannerText": "Rapide, simple et sécurisé",
+    "redirect.progress": "Redirection dans <span id=\"redirect-countdown\">3</span> secondes…",
+
+    "footer.copyright": "© 2025 lebanonsportsnews.com — Votre hub sport et tendances. Tous droits réservés.",
+
+    "bottom.menu": "Menu",
+
+    "header.notifications.count": "3",
+
+    "site.title": "Lebanonsportsnews",
+    "site.keywords": "actualités sportives, actualités football, matchs en direct, centre des matchs, temps forts du sport, sport à Oman, actualités cricket, actualités basket-ball, actualités volley-ball, actualités tennis, actualités esport, actualités MMA"
+  },
   "india": {
-    "header.logo": "Omansportsnews",
+    "header.logo": "Lebanonsportsnews",
     "search.placeholder": "खोजने के लिए टाइप करें...",
     "header.app.reward": "एप में अपना इनाम पाएं",
     "header.app.button": "बोनस प्राप्त करें",
@@ -253,7 +481,7 @@
     "league.laliga": "ला लीगा",
     "see.more": "और देखें",
 
-    "main.title": "Omansportsnews",
+    "main.title": "Lebanonsportsnews",
     "main.watch": "देखें",
 
     "news.heading": "ब्रेकिंग स्पोर्ट्स हेडलाइंस",
@@ -332,17 +560,17 @@
     "redirect.bannerText": "तेज, सरल और सुरक्षित",
     "redirect.progress": "<span id=\"redirect-countdown\">3</span> सेकंड में रीडायरेक्ट किया जा रहा है…",
 
-    "footer.copyright": "© 2025 omansportsnews.com — आपके लिए स्पोर्ट्स और ट्रेंड्स का हब। सर्वाधिकार सुरक्षित।",
+    "footer.copyright": "© 2025 lebanonsportsnews.com — आपके लिए स्पोर्ट्स और ट्रेंड्स का हब। सर्वाधिकार सुरक्षित।",
 
     "bottom.menu": "मेन्यू",
 
     "header.notifications.count": "3",
 
-    "site.title": "Omansportsnews",
+    "site.title": "Lebanonsportsnews",
     "site.keywords": "खेल समाचार, फुटबॉल समाचार, लाइव मैच, मैच सेंटर, खेल हाइलाइट्स, ओमान खेल, क्रिकेट समाचार, बास्केटबॉल समाचार, वॉलीबॉल समाचार, टेनिस समाचार, ईस्पोर्ट्स समाचार, MMA समाचार"
   },
   "bangladesh": {
-    "header.logo": "Omansportsnews",
+    "header.logo": "Lebanonsportsnews",
     "search.placeholder": "অনুসন্ধান করতে লিখুন...",
     "header.app.reward": "অ্যাপে আপনার রিওয়ার্ড পান",
     "header.app.button": "বোনাস পান",
@@ -367,7 +595,7 @@
     "league.laliga": "লা লিগা",
     "see.more": "আরও দেখুন",
 
-    "main.title": "Omansportsnews",
+    "main.title": "Lebanonsportsnews",
     "main.watch": "দেখুন",
 
     "news.heading": "সর্বশেষ ক্রীড়া শিরোনাম",
@@ -446,17 +674,17 @@
     "redirect.bannerText": "দ্রুত, সহজ এবং নিরাপদ",
     "redirect.progress": "<span id=\"redirect-countdown\">3</span> সেকেন্ডে রিডাইরেক্ট করা হবে…",
 
-    "footer.copyright": "© 2025 omansportsnews.com — আপনার স্পোর্টস ও ট্রেন্ডস হাব। সর্বস্বত্ব সংরক্ষিত।",
+    "footer.copyright": "© 2025 lebanonsportsnews.com — আপনার স্পোর্টস ও ট্রেন্ডস হাব। সর্বস্বত্ব সংরক্ষিত।",
 
     "bottom.menu": "মেনু",
 
     "header.notifications.count": "3",
 
-    "site.title": "Omansportsnews",
+    "site.title": "Lebanonsportsnews",
     "site.keywords": "ক্রীড়া সংবাদ, ফুটবল সংবাদ, লাইভ ম্যাচ, ম্যাচ সেন্টার, ক্রীড়া হাইলাইটস, ওমান ক্রীড়া, ক্রিকেট সংবাদ, বাস্কেটবল সংবাদ, ভলিবল সংবাদ, টেনিস সংবাদ, ইস্পোর্টস সংবাদ, MMA সংবাদ"
   },
   "pakistan": {
-    "header.logo": "Omansportsnews",
+    "header.logo": "Lebanonsportsnews",
     "search.placeholder": "تلاش کے لیے لکھیں...",
     "header.app.reward": "ایپ میں اپنا انعام حاصل کریں",
     "header.app.button": "بونس حاصل کریں",
@@ -481,7 +709,7 @@
     "league.laliga": "لا لیگا",
     "see.more": "مزید دیکھیں",
 
-    "main.title": "Omansportsnews",
+    "main.title": "Lebanonsportsnews",
     "main.watch": "دیکھیں",
 
     "news.heading": "اہم کھیل کی خبریں",
@@ -559,13 +787,13 @@
     "redirect.bannerText": "تیز، آسان، اور محفوظ",
     "redirect.progress": "<span id=\"redirect-countdown\">3</span> سیکنڈ میں ری ڈائریکٹ کیا جا رہا ہے…",
 
-    "footer.copyright": "© 2025 omansportsnews.com — آپ کا کھیل اور ٹرینڈز ہب۔ جملہ حقوق محفوظ ہیں۔",
+    "footer.copyright": "© 2025 lebanonsportsnews.com — آپ کا کھیل اور ٹرینڈز ہب۔ جملہ حقوق محفوظ ہیں۔",
 
     "bottom.menu": "مینو",
 
     "header.notifications.count": "3",
 
-    "site.title": "Omansportsnews",
+    "site.title": "Lebanonsportsnews",
     "site.keywords": "کھیل کی خبریں, فٹ بال خبریں, براہِ راست میچ, میچ سینٹر, کھیل کے اہم لمحات, عمان کھیل, کرکٹ خبریں, باسکٹ بال خبریں, والی بال خبریں, ٹینس خبریں, ای اسپورٹس خبریں, MMA خبریں"
   }
 }

@@ -548,7 +548,7 @@ async function loadMatches() {
 
 // --- Футбол ---
 const allowedFootballKeywords = [
-  'Premier League', 'Saudi Pro League', 'English Premier League', 'sudan', 'UEFA Champions League', 'oman',
+   'Lebanon', 'Lebanon national football team', 'Premier League', 'Saudi Pro League', 'English Premier League', 'UEFA Champions League'
 ];
 
 async function loadFootballMatches(dateStr) {
@@ -749,6 +749,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // translations for slider labels (loaded dynamically)
 let _sliderTranslations = null;
+const SPORTS_DEFAULT_LANG = 'sa';
+const SPORTS_SUPPORTED_LANGS = new Set(['sa', 'tr', 'en', 'fr']);
+
+function normalizeSportsLang(lang) {
+  return SPORTS_SUPPORTED_LANGS.has(lang) ? lang : SPORTS_DEFAULT_LANG;
+}
 
 async function loadSliderTranslations() {
   if (_sliderTranslations) return _sliderTranslations;
@@ -781,7 +787,7 @@ async function loadSliderTranslations() {
 }
 
 function tSlider(key, lang) {
-  lang = lang || (document.body && document.body.getAttribute('data-lang')) || localStorage.getItem('siteLang') || 'en';
+  lang = normalizeSportsLang(lang || (document.body && document.body.getAttribute('data-lang')) || localStorage.getItem('siteLang') || SPORTS_DEFAULT_LANG);
   if (!_sliderTranslations) return key; // not loaded yet
   // nested lookup like translations[lang][key]
   try {
@@ -792,7 +798,8 @@ function tSlider(key, lang) {
 }
 
 function updateExistingSliderTranslations(lang) {
-  if (!lang) lang = (document.body && document.body.getAttribute('data-lang')) || localStorage.getItem('siteLang') || 'en';
+  if (!lang) lang = (document.body && document.body.getAttribute('data-lang')) || localStorage.getItem('siteLang') || SPORTS_DEFAULT_LANG;
+  lang = normalizeSportsLang(lang);
   // update timer labels
   document.querySelectorAll('.slide__timer').forEach(timer => {
     const daysLabel = timer.querySelector('.days span');

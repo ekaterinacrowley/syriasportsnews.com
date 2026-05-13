@@ -4,14 +4,20 @@
 // topics будет загружаться из `src/i18n/translations.json` на основе текущего языка
 let topics = [];
 let currentActiveLang = null;
+const NEWS_DEFAULT_LANG = 'sa';
+const NEWS_SUPPORTED_LANGS = new Set(['sa', 'tr', 'en', 'fr']);
+
+function normalizeNewsLang(lang) {
+  return NEWS_SUPPORTED_LANGS.has(lang) ? lang : NEWS_DEFAULT_LANG;
+}
 
 function getCurrentLang() {
-  return document.body.getAttribute('data-lang') || localStorage.getItem('siteLang') || 'en';
+  return normalizeNewsLang(document.body.getAttribute('data-lang') || localStorage.getItem('siteLang') || NEWS_DEFAULT_LANG);
 }
 
 async function loadTopicsFromTranslations() {
   const STORAGE_KEY = 'siteLang';
-  const lang = document.body.getAttribute('data-lang') || localStorage.getItem(STORAGE_KEY) || 'en';
+  const lang = normalizeNewsLang(document.body.getAttribute('data-lang') || localStorage.getItem(STORAGE_KEY) || NEWS_DEFAULT_LANG);
 
   // Попробуем несколько путей (корень, относительный)
   const candidates = [
@@ -63,6 +69,7 @@ const CACHE_KEYS_NEWS = {
   NEWS_HIGHLIGHTS: 'news_highlights',
   NEWS_TRENDING: 'news_trending'
 };
+
 // Единая ссылка и таргет для всех кастомных новостей
 const CUSTOM_NEWS_URL = 'https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599';
 const CUSTOM_NEWS_TARGET = '_blank';
@@ -232,6 +239,14 @@ function shuffleArray(array) {
   return shuffled;
 }
 
+function isAllTopic(topic) {
+  if (!topic) return true;
+  const normalized = String(topic).trim().toLowerCase();
+  const knownAllAliases = new Set(['all', 'tumu', 'tümü', 'tous', 'الكل']);
+  const firstTopic = topics && topics[0] ? String(topics[0]).trim().toLowerCase() : '';
+  return knownAllAliases.has(normalized) || (firstTopic && normalized === firstTopic);
+}
+
 function renderArticles(articles) {
   newsContainer.innerHTML = '';
   if (!articles || articles.length === 0) {
@@ -368,7 +383,7 @@ async function loadAllNews() {
 
 async function loadNews(q = 'All') {
   if (!newsContainer) return;
-  if (q === 'All') {
+  if (isAllTopic(q)) {
     await loadAllNews();
     return;
   }
@@ -417,7 +432,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (firstBtn) {
     firstBtn.click();
   } else {
-    loadNews('All');
+    loadNews(topics[0] || 'All');
   }
 });
 
@@ -447,5 +462,5 @@ document.addEventListener('langChanged', async (e) => {
   createTopicButtons();
   const firstBtn = topicsContainer && topicsContainer.querySelector('button');
   if (firstBtn) firstBtn.click();
-  else loadNews('All');
+  else loadNews(topics[0] || 'All');
 });

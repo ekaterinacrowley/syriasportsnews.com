@@ -317,6 +317,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
     const STORAGE_KEY = 'siteLang';
 
+    const DEFAULT_LANG = 'sa';
+    const supportedLangs = new Set(Array.from(langButtons).map(btn => btn.getAttribute('data-lang')).filter(Boolean));
+    const rtlLangs = new Set(['sa']);
+
+    function normalizeLang(lang) {
+        return supportedLangs.has(lang) ? lang : DEFAULT_LANG;
+    }
+
     // Загружаемые переводы из JSON-файла
     let translations = {};
 
@@ -365,14 +373,15 @@ document.addEventListener('DOMContentLoaded', function() {
         console.warn('Could not load translations.json from any candidate paths', candidates);
     }
     function saveLang(lang) {
-        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* ignore */ }
+        try { localStorage.setItem(STORAGE_KEY, normalizeLang(lang)); } catch (e) { /* ignore */ }
     }
 
     function getSavedLang() {
-        try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+        try { return normalizeLang(localStorage.getItem(STORAGE_KEY)); } catch (e) { return null; }
     }
 
     function applyLang(lang) {
+        lang = normalizeLang(lang);
         if (!lang) return;
         body.setAttribute('data-lang', lang);
 
@@ -408,7 +417,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         // Устанавливаем атрибут dir для поддержки ассистивных технологий и правильного рендеринга
         try {
-            const rtlLangs = new Set(['sa', 'pakistan']);
             const dir = rtlLangs.has(lang) ? 'rtl' : 'ltr';
             document.documentElement.setAttribute('dir', dir);
             body.setAttribute('dir', dir);
@@ -432,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function() {
     (async function initLang() {
         await loadTranslations();
         const saved = getSavedLang();
-        const initial = saved || (langButtons[0] && langButtons[0].getAttribute('data-lang')) || 'en';
+        const initial = saved || (langButtons[0] && langButtons[0].getAttribute('data-lang')) || DEFAULT_LANG;
         applyLang(initial);
         document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: initial } }));
     })();

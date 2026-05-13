@@ -345,7 +345,7 @@ app.get("/news", async (req, res) => {
   try {
     const topic = req.query.q || "Football";
     // Map site lang codes to NewsAPI supported language codes
-    const LANG_MAP = { en: 'en', sa: 'ar', india: 'en', bangladesh: 'en', pakistan: 'en' };
+    const LANG_MAP = { en: 'en', sa: 'ar', tr: 'tr', fr: 'fr' };
     const GEO_MAP = {
       en: { gl: 'US', ceid: 'US:en' },
       ar: { gl: 'SA', ceid: 'SA:ar' }
@@ -421,7 +421,7 @@ app.get("/news", async (req, res) => {
 
     try {
       const topic = req.query.q || "Football";
-      const LANG_MAP = { en: 'en', sa: 'ar', india: 'en', bangladesh: 'en', pakistan: 'en' };
+      const LANG_MAP = { en: 'en', sa: 'ar', tr: 'tr', fr: 'fr' };
       const GEO_MAP = {
         en: { gl: 'US', ceid: 'US:en' },
         ar: { gl: 'SA', ceid: 'SA:ar' }

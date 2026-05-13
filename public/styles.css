@@ -25,12 +25,12 @@
     background-size: cover;
   }
 }
-[data-theme=light][data-lang=pakistan] .telegram-banner, [data-theme=light][data-lang=sa] .telegram-banner {
+[data-theme=light][data-lang=sa] .telegram-banner {
   background: url(images/telegram-bg-rtl.webp) left center no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
-  [data-theme=light][data-lang=pakistan] .telegram-banner, [data-theme=light][data-lang=sa] .telegram-banner {
+  [data-theme=light][data-lang=sa] .telegram-banner {
     background: url(images/telegram-bg-mob.webp) center no-repeat;
     background-size: cover;
   }
@@ -68,12 +68,12 @@
     background-size: cover;
   }
 }
-[data-theme=dark][data-lang=pakistan] .telegram-banner, [data-theme=dark][data-lang=sa] .telegram-banner {
+[data-theme=dark][data-lang=sa] .telegram-banner {
   background: url(images/telegram-bg-rtl-dark.webp) left center no-repeat;
   background-size: cover;
 }
 @media (max-width: 767px) {
-  [data-theme=dark][data-lang=pakistan] .telegram-banner, [data-theme=dark][data-lang=sa] .telegram-banner {
+  [data-theme=dark][data-lang=sa] .telegram-banner {
     background: url(images/telegram-bg-dark-mob.webp) center no-repeat;
     background-size: cover;
   }
@@ -2224,7 +2224,6 @@ footer {
     margin-bottom: -70px;
   }
 }
-[data-lang=pakistan],
 [data-lang=sa] {
   /* Sidebar flips */
   /* App banner image and pseudo-element */
@@ -2232,188 +2231,152 @@ footer {
   /* Mobile-specific flips */
   /* Tab flips */
 }
-[data-lang=pakistan] .slider,
 [data-lang=sa] .slider {
   direction: ltr;
 }
-[data-lang=pakistan] .sidebar,
 [data-lang=sa] .sidebar {
   right: -275px;
   left: auto;
   padding: 24px 0 28px 24px;
 }
 @media (max-width: 1440px) and (min-width: 768px) {
-  [data-lang=pakistan] .sidebar,
   [data-lang=sa] .sidebar {
     padding: 1.667vw 0 1.944vw 1.667vw;
   }
 }
 @media (max-width: 767px) {
-  [data-lang=pakistan] .sidebar,
   [data-lang=sa] .sidebar {
     padding: 28px 16px 16px 16px;
   }
 }
-[data-lang=pakistan] .sidebar__app,
 [data-lang=sa] .sidebar__app {
   margin-right: -15px;
   margin-left: 0;
 }
 @media (max-width: 1440px) and (min-width: 768px) {
-  [data-lang=pakistan] .sidebar__app,
   [data-lang=sa] .sidebar__app {
     margin-right: -1.042vw;
   }
 }
 @media (max-width: 767px) {
-  [data-lang=pakistan] .sidebar__app,
   [data-lang=sa] .sidebar__app {
     margin-right: 0;
   }
 }
-[data-lang=pakistan] .sidebar__app-img,
 [data-lang=sa] .sidebar__app-img {
   right: 50%;
   left: auto;
 }
-[data-lang=pakistan] .app-banner:after,
 [data-lang=sa] .app-banner:after {
   border-radius: 16px 0 0 16px;
   background: url(images/app-bg-rtl.webp) left center no-repeat;
 }
 @media (max-width: 767px) {
-  [data-lang=pakistan] .app-banner:after,
   [data-lang=sa] .app-banner:after {
     background: url(images/app-bg-mob.webp) right bottom no-repeat;
   }
 }
-[data-lang=pakistan] .app-banner__image,
 [data-lang=sa] .app-banner__image {
   left: 0;
   right: auto;
 }
-[data-lang=pakistan] .app-banner__btn,
 [data-lang=sa] .app-banner__btn {
   padding: 4px 24px 4px 4px;
 }
 @media (max-width: 1440px) and (min-width: 768px) {
-  [data-lang=pakistan] .app-banner__btn,
   [data-lang=sa] .app-banner__btn {
     padding: 0.278vw 1.667vw 0.278vw 0.278vw;
   }
 }
-[data-lang=pakistan] .sports .match-status,
 [data-lang=sa] .sports .match-status {
   text-align: left;
 }
-[data-lang=pakistan] .sports .team--2,
 [data-lang=sa] .sports .team--2 {
   text-align: left;
   justify-content: flex-start;
 }
-[data-lang=pakistan] .sports .time,
 [data-lang=sa] .sports .time {
   padding: 4px 16px 4px 4px;
 }
 @media (max-width: 1440px) and (min-width: 767px) {
-  [data-lang=pakistan] .sports .time,
   [data-lang=sa] .sports .time {
     padding: 0.278vw 1.111vw 0.278vw 0.278vw;
   }
 }
-[data-lang=pakistan] .tab__link:after,
 [data-lang=sa] .tab__link:after {
   transform: rotate(90deg);
 }
 @media (max-width: 767px) {
-  [data-lang=pakistan] .sidebar,
   [data-lang=sa] .sidebar {
     left: auto;
     right: -110vw;
   }
-  [data-lang=pakistan] .sidebar.open,
   [data-lang=sa] .sidebar.open {
     right: 0;
     left: auto;
   }
-  [data-lang=pakistan] .slider__wrapper,
   [data-lang=sa] .slider__wrapper {
     left: auto;
     right: 0;
   }
-  [data-lang=pakistan] .app-banner__image,
   [data-lang=sa] .app-banner__image {
     margin-right: -8px;
     margin-left: -8px;
   }
-  [data-lang=pakistan] .tab__head,
   [data-lang=sa] .tab__head {
     padding-left: 48px;
     padding-right: 0;
   }
-  [data-lang=pakistan] .tab__body,
   [data-lang=sa] .tab__body {
     padding-left: 24px;
     padding-right: 0;
   }
-  [data-lang=pakistan] .match .time,
   [data-lang=sa] .match .time {
     margin-left: 0;
     margin-right: auto;
   }
-  [data-lang=pakistan] .team--2,
   [data-lang=sa] .team--2 {
     text-align: right;
     justify-content: flex-end;
   }
 }
-[data-lang=pakistan] .tab__league,
 [data-lang=sa] .tab__league {
   margin-right: 8px;
   margin-left: 0;
 }
-[data-lang=pakistan] .tab__link,
 [data-lang=sa] .tab__link {
   margin-right: auto;
   margin-left: 0;
 }
-[data-lang=pakistan] .tab__head,
 [data-lang=sa] .tab__head {
   padding-left: 48px;
   padding-right: 0;
 }
-[data-lang=pakistan] .tab__body,
 [data-lang=sa] .tab__body {
   padding-left: 24px;
   padding-right: 0;
 }
-[data-lang=pakistan] .news__btn,
 [data-lang=sa] .news__btn {
   padding: 4px 24px 4px 4px;
 }
 @media (max-width: 1440px) and (min-width: 768px) {
-  [data-lang=pakistan] .news__btn,
   [data-lang=sa] .news__btn {
     padding: 0.278vw 1.667vw 0.278vw 0.278vw;
   }
 }
-[data-lang=pakistan] .teams__container,
 [data-lang=sa] .teams__container {
   margin-right: 0;
 }
-[data-lang=pakistan] footer,
 [data-lang=sa] footer {
   padding: 40px 275px 40px 0;
 }
 @media (max-width: 1440px) and (min-width: 767px) {
-  [data-lang=pakistan] footer,
   [data-lang=sa] footer {
     font-size: 1.111vw;
     padding: 2.778vw 19.097vw 2.778vw 0;
   }
 }
 @media (max-width: 767px) {
-  [data-lang=pakistan] footer,
   [data-lang=sa] footer {
     padding: 40px 8px 100px;
   }
