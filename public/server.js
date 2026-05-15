@@ -453,7 +453,7 @@ app.get("/api/events", async(req,res)=>{
       ref: REF,
       sportIds: sportId,
       lng: "en",
-      partnerLink: 'refpa58144.com/L?tag=d_4980367m_1599c_',
+      partnerLink: 'reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599',
     }
     if (gtStart) params.gtStart = Number(gtStart)
     if (ltStart) params.ltStart = Number(ltStart)

@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const projectRoot = resolve(__dirname, '..');
 
-const BASE_URL = process.env.SITEMAP_BASE_URL || 'https://lebanonsportsnews.com';
+const BASE_URL = process.env.SITEMAP_BASE_URL || 'https://syriasportsnews.com';
 const now = new Date().toISOString().slice(0, 10);
 
 const urls = [

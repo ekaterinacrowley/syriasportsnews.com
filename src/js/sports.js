@@ -548,7 +548,7 @@ async function loadMatches() {
 
 // --- Футбол ---
 const allowedFootballKeywords = [
-   'Lebanon', 'Lebanon national football team', 'Premier League', 'Saudi Pro League', 'English Premier League', 'UEFA Champions League'
+   'Syrian', 'Syrian national football team', 'Syrian Football Association', 'Premier League', 'UEFA Champions League'
 ];
 
 async function loadFootballMatches(dateStr) {

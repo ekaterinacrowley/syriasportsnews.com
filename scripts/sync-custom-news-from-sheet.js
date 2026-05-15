@@ -1,6 +1,6 @@
 const SHEET_ID = process.env.CUSTOM_NEWS_SHEET_ID || '1TIrKdVNGt5NDs6gkR9nJgcUiIkDrW8uTG8UUXwSd4LE';
 const SHEET_GID = process.env.CUSTOM_NEWS_SHEET_GID || '0';
-const FILTER_COUNTRY = (process.env.CUSTOM_NEWS_COUNTRY || 'Lebanon').toLowerCase();
+const FILTER_COUNTRY = 'syria';
 const MAX_ITEMS_PER_LANG = Number(process.env.CUSTOM_NEWS_MAX_ITEMS || 8);
 const DEFAULT_IMAGE_URL = process.env.CUSTOM_NEWS_DEFAULT_IMAGE_URL || '/images/news-image.webp';
 const LANG_COLUMN_1_BASED = Number(process.env.CUSTOM_NEWS_LANG_COLUMN || 6);

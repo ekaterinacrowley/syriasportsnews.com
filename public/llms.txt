@@ -1,10 +1,10 @@
-# Lebanonsportsnews
+# Syriasportsnews
 
 > Sports portal focused on live football updates, match center data, highlights, and sports news.
 
 ## Site
-- Base URL: https://lebanonsportsnews.com/
-- News page: https://lebanonsportsnews.com/news.html
+- Base URL: https://syriasportsnews.com/
+- News page: https://syriasportsnews.com/news.html
 - Primary language: en
 
 ## Content Summary
@@ -16,4 +16,4 @@
 ## Crawl Guidance
 - Public pages may be indexed.
 - Prefer canonical URLs from page metadata.
-- Use sitemap for URL discovery: https://lebanonsportsnews.com/sitemap.xml
+- Use sitemap for URL discovery: https://syriasportsnews.com/sitemap.xml
