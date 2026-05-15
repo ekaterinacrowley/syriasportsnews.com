@@ -1,11 +1,11 @@
 const SHEET_ID = process.env.CUSTOM_NEWS_SHEET_ID || '1TIrKdVNGt5NDs6gkR9nJgcUiIkDrW8uTG8UUXwSd4LE';
 const SHEET_GID = process.env.CUSTOM_NEWS_SHEET_GID || '0';
-const FILTER_COUNTRY = (process.env.CUSTOM_NEWS_COUNTRY || 'Oman').toLowerCase();
+const FILTER_COUNTRY = (process.env.CUSTOM_NEWS_COUNTRY || 'Lebanon').toLowerCase();
 const MAX_ITEMS_PER_LANG = Number(process.env.CUSTOM_NEWS_MAX_ITEMS || 8);
 const DEFAULT_IMAGE_URL = process.env.CUSTOM_NEWS_DEFAULT_IMAGE_URL || '/images/news-image.webp';
 const LANG_COLUMN_1_BASED = Number(process.env.CUSTOM_NEWS_LANG_COLUMN || 6);
 const LANG_COLUMN_INDEX = Math.max(0, LANG_COLUMN_1_BASED - 1);
-const TARGET_LANGS = (process.env.CUSTOM_NEWS_LANGS || 'en,sa,india,pakistan,bangladesh')
+const TARGET_LANGS = (process.env.CUSTOM_NEWS_LANGS || 'en,sa,tr,fr')
   .split(',')
   .map((x) => x.trim())
   .filter(Boolean);
@@ -64,6 +64,8 @@ function normalizeLang(value) {
   if (!v) return '';
   if (v === 'en' || v === 'english') return 'en';
   if (v === 'sa' || v === 'arabic' || v === 'ar' || v === 'saudi') return 'sa';
+  if (v === 'tr' || v === 'turkish' || v === 'turkiye' || v === 'türkiye' || v === 'turkey') return 'tr';
+  if (v === 'fr' || v === 'french' || v === 'français' || v === 'francais') return 'fr';
   if (v === 'india' || v === 'hindi' || v === 'hindu' || v === 'hi' || v === 'in') return 'india';
   if (v === 'pakistan' || v === 'urdu' || v === 'ur' || v === 'pk') return 'pakistan';
   if (v === 'bangladesh' || v === 'bangla' || v === 'bn' || v === 'bd') return 'bangladesh';

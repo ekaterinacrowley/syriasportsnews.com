@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function performSearch(inputElement) {
         const searchTerm = inputElement.value.trim();
-        const baseUrl = 'https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599';
+        const baseUrl = 'https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599';
         
         let finalUrl = baseUrl;
         if (searchTerm) {
@@ -484,7 +484,7 @@ document.addEventListener('DOMContentLoaded', function() {
         shareButton.addEventListener('click', async function(e) {
             e.preventDefault();
             
-            const linkToCopy = 'https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599';
+            const linkToCopy = 'https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599';
             
             try {
                 // Пробуем нативное分享 для мобильных

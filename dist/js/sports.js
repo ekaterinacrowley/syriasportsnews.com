@@ -466,7 +466,7 @@ function renderFootball(matches) {
       matchEl.className = 'match';
       matchEl.href = '#';
       if (isLive) matchEl.classList.add('live');
-      matchEl.innerHTML = `<div class="team"><div class="team__logo"><img src="${event.teams.home.logo}" alt="${event.teams.home.name}"></div><span>${event.teams.home.name}</span></div><a href="https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599" target="_blank" class="time">${displayTime}</a><div class="team team--2"><span>${event.teams.away.name}</span><div class="team__logo"><img src="${event.teams.away.logo}" alt="${event.teams.away.name}"></div></div>`;
+      matchEl.innerHTML = `<div class="team"><div class="team__logo"><img src="${event.teams.home.logo}" alt="${event.teams.home.name}"></div><span>${event.teams.home.name}</span></div><a href="https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599" target="_blank" class="time">${displayTime}</a><div class="team team--2"><span>${event.teams.away.name}</span><div class="team__logo"><img src="${event.teams.away.logo}" alt="${event.teams.away.name}"></div></div>`;
       leagueEl.appendChild(matchEl);
     });
     footballContainer.appendChild(leagueEl);
@@ -676,8 +676,8 @@ async function createTomorrowSwiperSlides() {
                 </div> 
               </div>
               <div class="slide__controls">
-                <a href="https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599" target="_blank" class="slide__btn slide__btn--1">${tSlider('slider.watchPlay', lang)}</a>
-                <a href="https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599" target="_blank" class="slide__btn slide__btn--2">${tSlider('slider.remind', lang)}</a>
+                <a href="https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599" target="_blank" class="slide__btn slide__btn--1">${tSlider('slider.watchPlay', lang)}</a>
+                <a href="https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599" target="_blank" class="slide__btn slide__btn--2">${tSlider('slider.remind', lang)}</a>
               </div>
             </div>
           </div>
@@ -921,7 +921,7 @@ function renderCricket(matches, selectedDate) {
               <div class="team__logo"><img src="${match.teamInfo[0]?.img}" alt="${match.teamInfo[0]?.name}"></div>
               <span>${match.teamInfo[0]?.shortname || match.teamInfo[0]?.name}</span>
             </div>
-            <a href="https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599" target="_blank" class="time"><strong>${displayDate}</strong><span class="watch">Watch</span></a>
+            <a href="https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599" target="_blank" class="time"><strong>${displayDate}</strong><span class="watch">Watch</span></a>
             <div class="team team--2">
               <span>${match.teamInfo[1]?.shortname || match.teamInfo[1]?.name}</span>
               <div class="team__logo"><img src="${match.teamInfo[1]?.img}" alt="${match.teamInfo[1]?.name}"></div>
@@ -987,7 +987,7 @@ async function loadBasketballMatches(dateStr) {
             <div class="team__logo"><img src="${match.teamInfo[0]?.img}" alt="${match.teamInfo[0]?.name}"></div>
             <span>${match.teamInfo[0]?.name}</span>
           </div>
-          <a href="https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599" target="_blank" class="time">${match.status}<span class="watch">Watch</span></a>
+          <a href="https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599" target="_blank" class="time">${match.status}<span class="watch">Watch</span></a>
           <div class="team team--2">
             <span>${match.teamInfo[1]?.name}</span>
             <div class="team__logo"><img src="${match.teamInfo[1]?.img}" alt="${match.teamInfo[1]?.name}"></div>
@@ -1048,7 +1048,7 @@ async function loadVolleyballMatches(dateStr) {
             <div class="team__logo"><img src="${match.teamInfo[0]?.img}" alt="${match.teamInfo[0]?.name}"></div>
             <span>${match.teamInfo[0]?.name}</span>
           </div>
-          <a href="https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599" target="_blank" class="time">${match.status}<span class="watch">Watch</span></a>
+          <a href="https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599" target="_blank" class="time">${match.status}<span class="watch">Watch</span></a>
           <div class="team team--2">
            <span>${match.teamInfo[1]?.name}</span>
             <div class="team__logo"><img src="${match.teamInfo[1]?.img}" alt="${match.teamInfo[1]?.name}"></div>
@@ -1125,7 +1125,7 @@ async function loadStandings(league = 39, season = 2023, containerId = 'leagueTa
            const logoElement = document.createElement('div');
            logoElement.className = 'teams__item';
            logoElement.innerHTML = `
-             <a href="https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599" target="_blank"><img src="${row.logo}" 
+             <a href="https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599" target="_blank"><img src="${row.logo}" 
                   alt="${row.team}" 
                   title="${row.team}"></a>
            `;
@@ -1202,7 +1202,7 @@ async function loadStandings(league = 39, season = 2023, containerId = 'leagueTa
        header.innerHTML = `
          <img src="${data.league.logo}" alt="${data.league.name}" style="width:32px;height:32px;object-fit:contain">
          <div class="tab__league">${data.league.name} — ${data.season}</div>
-         <a href="https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599" target="_blank" class="tab__link">View All</a>
+         <a href="https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599" target="_blank" class="tab__link">View All</a>
        `;
      } else {
        header.textContent = `Таблица — ${data.season}`;

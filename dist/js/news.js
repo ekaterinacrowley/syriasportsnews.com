@@ -63,7 +63,7 @@ const CACHE_KEYS_NEWS = {
 const customNews = {
   title: "Lions look to dominate the playoffs",
   description: "The victory over the Bills put the Lions in a comfortable position to make the playoffs",
-  url: "https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599",
+  url: "https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599",
   target: "_blank",
   imageUrl: "images/news-image.webp",
   isCustom: true

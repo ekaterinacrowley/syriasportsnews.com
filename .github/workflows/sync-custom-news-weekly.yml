@@ -27,10 +27,10 @@ jobs:
         env:
           CUSTOM_NEWS_SHEET_ID: 1TIrKdVNGt5NDs6gkR9nJgcUiIkDrW8uTG8UUXwSd4LE
           CUSTOM_NEWS_SHEET_GID: 0
-          CUSTOM_NEWS_COUNTRY: Oman
+          CUSTOM_NEWS_COUNTRY: Lebanon
           CUSTOM_NEWS_MAX_ITEMS: 8
           CUSTOM_NEWS_LANG_COLUMN: 6
-          CUSTOM_NEWS_LANGS: en,sa,india,pakistan,bangladesh
+          CUSTOM_NEWS_LANGS: en,sa,tr,fr
 
       - name: Commit and push if changed
         run: |

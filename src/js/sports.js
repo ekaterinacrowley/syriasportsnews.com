@@ -33,7 +33,7 @@ const REQUEST_TIMEOUTS = {
   HEAVY: 30000
 };
 
-const AFFILIATE_LINK = 'https://refpa58144.com/L?tag=d_4980367m_1599c_&site=4980367&ad=1599';
+const AFFILIATE_LINK = 'https://reffpa.com/L?tag=d_5453931m_1599c_&site=5453931&ad=1599';
 
 // Функция для получения URL логотипа команды
 function getTeamLogo(imageData) {
